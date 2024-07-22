@@ -1,0 +1,11 @@
+services:
+  - name: my-html-app
+    type: webapp
+    source:
+      path: ./index.html
+    runtime:
+      type: static
+    routes:
+      - path: /
+        method: GET
+        file: index.html
